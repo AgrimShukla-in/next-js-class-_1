@@ -1,0 +1,26 @@
+
+'use client';
+
+import { ThemeProvider } from 'next-themes';
+import { ReactNode, useEffect, useState } from 'react';
+
+export default function ThemeProviderWrapper({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure we only render after hydration to avoid flicker
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      {children}
+    </ThemeProvider>
+  );
+}
