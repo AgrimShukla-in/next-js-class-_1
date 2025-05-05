@@ -1,9 +1,12 @@
-import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
+
 
 export default function Home() {
   return (
    <>
-   <h1 className="text-3xl font-bold underline text-center mt-10 ">hello agrim </h1>
+     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.2]">
+       <HeroSection />
+     </main>
    </>
   );
 }

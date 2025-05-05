@@ -16,8 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <ThemeProviderWrapper>
+          <div className="relative w-full flex items-center justify-center">
           <Navbar />
-          <ThemeToggle />      {/* wherever you want it */}
+          </div>
           {children}
         </ThemeProviderWrapper>
       </body>
