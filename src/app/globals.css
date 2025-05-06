@@ -14,6 +14,7 @@
 --font-mono: var(--font-geist-mono);
 --animate-spotlight-lr: spotlight-lr 6s ease-in-out infinite;
 --animate-spotlight-rl: spotlight-rl 6s ease-in-out infinite;
+--animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 }
 
 @keyframes spotlight-lr {
@@ -66,4 +67,61 @@ body {
 background: var(--background);
 color: var(--foreground);
 font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - var(--gap)/2));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}
+
+.scroller {
+  --gap: 1rem;
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+/* Fade in/out effect for cards */
+@keyframes fadeIn {
+  from { opacity: 0.5; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0.5; transform: scale(0.95); }
+}
+
+.opacity-transition {
+  opacity: 0.7;
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out, box-shadow 1.2s ease-in-out;
+}
+
+.opacity-transition:hover,
+.opacity-transition:focus-within {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  background-color: white;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Add more contrast for dark mode */
+.dark .opacity-transition:hover,
+.dark .opacity-transition:focus-within {
+  background-color: #1f2937;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
 }

@@ -1,105 +1,216 @@
 {
-    "courses": [
-      {
-        "id": 1,
-        "title": "Guitar Fundamentals",
-        "slug": "guitar-fundamentals",
-        "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
-        "price": 99.99,
-        "instructor": "John Doe",
-        "isFeatured": true,
-        "image": "/courses/guitar.jpg" 
-      },
-      {
-        "id": 2,
-        "title": "Piano for Beginners",
-        "slug": "piano-for-beginners",
-        "description": "Start your musical journey with foundational piano skills taught by expert instructors.",
-        "price": 109.99,
-        "instructor": "Jane Smith",
-        "isFeatured": false,
-        "image": "/courses/piano.jpg" 
-      },
-      {
-        "id": 3,
-        "title": "Advanced Vocal Techniques",
-        "slug": "advanced-vocal-techniques",
-        "description": "Enhance your singing with advanced vocal techniques for intermediate to advanced learners.",
-        "price": 119.99,
-        "instructor": "Emily Johnson",
-        "isFeatured": true,
-        "image": "/courses/vocalist.jpg" 
-      },
-      {
-        "id": 4,
-        "title": "Drumming Mastery",
-        "slug": "drumming-mastery",
-        "description": "Master the drums with our comprehensive course covering all skill levels.",
-        "price": 129.99,
-        "instructor": "Mike Brown",
-        "isFeatured": false,
-        "image": "/courses/drumming.jpg"
-      },
-      {
-        "id": 5,
-        "title": "Jazz Improvisation",
-        "slug": "jazz-improvisation",
-        "description": "Learn the art of jazz improvisation with this course designed for all levels.",
-        "price": 139.99,
-        "instructor": "Chris Davis",
-        "isFeatured": false,
-        "image": "/courses/jazz.jpg"
-      },
-      {
-        "id": 6,
-        "title": "Music Production Fundamentals",
-        "slug": "music-production-fundamentals",
-        "description": "Dive into music production with this introductory course on the basics of sound engineering and mixing.",
-        "price": 149.99,
-        "instructor": "Alex Wilson",
-        "isFeatured": true,
-        "image": "/courses/music-prod.jpg"
-      },
-      {
-        "id": 7,
-        "title": "Songwriting Essentials",
-        "slug": "songwriting-essentials",
-        "description": "Learn the essentials of songwriting to express your musical creativity.",
-        "price": 159.99,
-        "instructor": "Samantha Miller",
-        "isFeatured": false,
-        "image": "/courses/song-writing.jpg"
-      },
-      {
-        "id": 8,
-        "title": "Electronic Music Production",
-        "slug": "electronic-music-production",
-        "description": "Create compelling electronic music with our course designed for beginners to advanced users.",
-        "price": 169.99,
-        "instructor": "Luke Harris",
-        "isFeatured": true,
-        "image": "/courses/music-prod.jpg"
-      },
-      {
-        "id": 9,
-        "title": "Classical Music History",
-        "slug": "classical-music-history",
-        "description": "Explore the rich history of classical music from its origins to the present day.",
-        "price": 179.99,
-        "instructor": "Grace Lee",
-        "isFeatured": false,
-        "image": "/courses/classical-music.jpg"
-      },
-      {
-        "id": 10,
-        "title": "Blues Guitar Techniques",
-        "slug": "blues-guitar-techniques",
-        "description": "Discover the techniques of blues guitar to add soul and depth to your playing.",
-        "price": 189.99,
-        "instructor": "Ethan Moore",
-        "isFeatured": true,
-        "image": "/courses/blues.jpg"
-      }
-    ]
-  }
+  "webDevelopmentCourses": [
+    {
+      "id": 1,
+      "title": "Intro to HTML & CSS",
+      "slug": "intro-to-html-css",
+      "description": "Learn the foundations of web development by building static sites with HTML5 and Tailwind CSS.",
+      "price": 89.99,
+      "instructor": "Alex Johnson",
+      "isFeatured": true,
+      "image": "https://plus.unsplash.com/premium_photo-1663075847012-c781e0d194ce?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Basics",
+      "slug": "javascript-basics",
+      "description": "Understand variables, functions, and the DOM to make your pages interactive.",
+      "price": 99.99,
+      "instructor": "Maria Rodriguez",
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "title": "React & Next.js Fundamentals",
+      "slug": "react-nextjs-fundamentals",
+      "description": "Build server-rendered React apps with Next.js, including pages, routing, and data fetching.",
+      "price": 129.99,
+      "instructor": "Samuel Lee",
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1693733470033-c628154571b2?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "photographyCourses": [
+    {
+      "id": 1,
+      "title": "Photography Fundamentals",
+      "slug": "photography-fundamentals",
+      "description": "Master your camera settings, composition, and lighting to take stunning photos.",
+      "price": 79.99,
+      "instructor": "Olivia Green",
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1709691929386-7ec11fa982e7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "title": "Portrait Photography",
+      "slug": "portrait-photography",
+      "description": "Learn posing, lighting techniques, and post-processing to create professional portraits.",
+      "price": 109.99,
+      "instructor": "Ethan Carter",
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1534829178390-5312a631a68e?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "title": "Landscape Photography",
+      "slug": "landscape-photography",
+      "description": "Capture breathtaking landscapes by understanding natural light and composition.",
+      "price": 119.99,
+      "instructor": "Grace Harper",
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1589958339476-2ade9141c80a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "clientName": "Elizabeth & Brendan",
+      "testimonial": "Alicia is an absolute pleasure to work with. She is incredibly kind, fun, and accommodating, and she has extensive knowledge of all things related to weddings, not just photography! Every photo she takes is a work of art.",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2017/05/18/08/25/girl-2322901_1280.jpg",
+      "date": "2024-06-15"
+    },
+    {
+      "id": 2,
+      "clientName": "Sophie & Eli",
+      "testimonial": "Alicia was amazing! We had her for 6 hours for our wedding day and she captured so much in such a short amount of time. The photos capture us as a couple, us with our friends, and us with our families so perfectly.",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2017/12/17/08/12/girl-3023831_1280.jpg",
+      "date": "2024-07-10"
+    },
+    {
+      "id": 3,
+      "clientName": "Mia & Johnathan",
+      "testimonial": "Alicia made our engagement and wedding photos a breeze and they are something we will treasure for the rest of our lives! She made us much more comfortable in front of the camera.",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2023/07/30/09/12/red-hair-girl-8158373_1280.jpg",
+      "date": "2024-08-05"
+    },
+    {
+      "id": 4,
+      "clientName": "Lillian & Connor",
+      "testimonial": "Alicia took our maternity photos and came to our home to take newborn photos as well. She was absolutely amazing to work with, and after an especially long journey to have a baby we will treasure these photos forever!",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/04/42/beautiful-1867374_960_720.jpg",
+      "date": "2024-09-12"
+    },
+    {
+      "id": 5,
+      "clientName": "Ada & Sieggy",
+      "testimonial": "Alicia photographed our tiny, intimate wedding right around the holidays. She was responsive and helpful during the booking process and took time to understand our vision. The magic really happened on the day— she did an AMAZING job executing our vision!",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2021/03/25/14/00/horse-6123173_1280.jpg",
+      "date": "2024-10-20"
+    },
+    {
+      "id": 6,
+      "clientName": "Delaina & Drew",
+      "testimonial": "Alicia has that rare talent of capturing the true essence of a moment while making it all look effortless. We love Alicia so much!! My husband and I both hate having our photo taken but Alicia helps us feel at ease and guides our poses.",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2018/04/15/20/19/girl-3322756_1280.jpg",
+      "date": "2024-11-05"
+    },
+    {
+      "id": 7,
+      "clientName": "Gonyea Family",
+      "testimonial": "If you want a photographer that won’t ask your reluctant family photo attendee to do anything stupid - Alicia is your girl! She jumped right in to snapping photos of the non-stop energy that is three little boys that have no chill.",
+      "rating": 5,
+      "image": "https://cdn.pixabay.com/photo/2023/11/10/02/30/woman-8378634_1280.jpg",
+      "date": "2024-12-01"
+    }
+  ],
+  "web":[
+    {
+      "rank": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "marketCap": 1873186281225.60,
+      "price": 94315.97,
+      "link": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "rank": 2,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "marketCap": 218356111645.71,
+      "price": 1808.59,
+      "link": "https://coinmarketcap.com/currencies/ethereum/"
+    },
+    {
+      "rank": 3,
+      "name": "Tether",
+      "symbol": "USDT",
+      "marketCap": 149362874664.66,
+      "price": 1.0000,
+      "link": "https://coinmarketcap.com/currencies/tether/"
+    },
+    {
+      "rank": 4,
+      "name": "XRP",
+      "symbol": "XRP",
+      "marketCap": 126238648195.51,
+      "price": 2.1578,
+      "link": "https://coinmarketcap.com/currencies/xrp/"
+    },
+    {
+      "rank": 5,
+      "name": "BNB",
+      "symbol": "BNB",
+      "marketCap": 82560677386.72,
+      "price": 586.00,
+      "link": "https://coinmarketcap.com/currencies/bnb/"
+    },
+    {
+      "rank": 6,
+      "name": "Solana",
+      "symbol": "SOL",
+      "marketCap": 74610396931.67,
+      "price": 143.98,
+      "link": "https://coinmarketcap.com/currencies/solana/"
+    },
+    {
+      "rank": 7,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "marketCap": 23318926770.00,
+      "price": 0.662920,
+      "link": "https://coinmarketcap.com/currencies/cardano/"
+    }
+  ],
+  "item":[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "designation": "Software Engineer",
+      "image": "https://cdn.pixabay.com/photo/2018/07/28/09/23/woman-3567600_960_720.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bob Martínez",
+      "designation": "Product Manager",
+      "image": "https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_960_720.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Carol Lee",
+      "designation": "UX Designer",
+      "image": "https://cdn.pixabay.com/photo/2024/01/10/16/22/man-8499961_1280.jpg"
+    },
+    {
+      "id": 4,
+      "name": "David O’Connor",
+      "designation": "DevOps Engineer",
+      "image": "https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_960_720.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Eva Wang",
+      "designation": "QA Analyst",
+      "image": "https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg"
+    }
+  ]
   
+  
+}
